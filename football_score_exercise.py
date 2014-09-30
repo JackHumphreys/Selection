@@ -12,5 +12,5 @@ if score1>score2:
 elif score1==score2:
     print("{0} recieve 1 point and {1} recieve 1 point".format(team1, team2))
 
-elif score1>score2:
+elif score1<score2:
     print("{0} recieve 0 points and {1} recieve 3 points".format(team1, team2))
