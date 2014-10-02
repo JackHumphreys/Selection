@@ -1,13 +1,11 @@
 #Month Exercise
-date = float(input("Please enter date as DD/MM/YYYY"))
+date = str(input("Please enter date as DD/MM/YYYY: "))
 
-date_length = len(date)
-day = date_length[:2]
-print(day)
-             
- 
+date.split("/")
+day,month,year = date.split("/")
 
-if day == 01:
+
+if day == 1:
     print("1st")
 
 elif day == 2:
@@ -16,7 +14,7 @@ elif day == 2:
 elif day == 3:
     print("3rd")
 
-elif day >= 4 and day <= 30:
+elif day == 4:
     print("{0}th".format(day))
 
 
