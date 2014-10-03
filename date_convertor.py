@@ -1,8 +1,8 @@
 #Date Exercise
-date = input("Please enter date as DD/MM/YYYY: ")
+date = input("Please enter date as DD/MM/YY: ")
 day_input = int(date[:2])
 month_input = int(date[3:5])
-year = int(date[6:10])
+year_input = int(date[6:8])
 
 if day_input == 1:
     day = ("1st")
@@ -15,6 +15,7 @@ elif day_input == 3:
 
 elif day_input >= 4 and day_input <=30:
     day = ("{0}th".format(day_input))
+    
 
 else:
     day = ("N/A")
@@ -62,6 +63,13 @@ elif month_input == 12:
 else:
     month = ("N/A")
 
+
+
+if year_input >= 30:
+    year = ("19{0}".format(year_input))
+
+elif year_input <= 30:
+    year = ("20{0}".format(year_input))
 
 
 
